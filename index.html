@@ -20,15 +20,15 @@
   </button>
 
   <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+    <ul class="navbar-nav mr-auto nav nav-tabs">
+      <li class="nav-item" role="presentation">
+        <a class="nav-link" href="#home" role="tab" data-toggle="tab"><span class="text-success">Home</span> <span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Tracker <span class="sr-only">(current)</span></a>
+      <li class="nav-item" role="presentation">
+        <a class="nav-link" href="#tracker" role="tab" data-toggle="tab"><span class="text-success">Tracker</span> <span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item">
-      <a class="nav-link" href="#">Leaderboard <span class="sr-only">(current)</span></a>
+      <li class="nav-item" role="presentation">
+      <a class="nav-link" href="#leaderboard" role="tab" data-toggle="tab"><span class="text-success">Leaderboard</span> <span class="sr-only">(current)</span></a>
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
@@ -39,10 +39,16 @@
 </nav>
 
 <main role="main" class="container">
-
-  <div class="starter-template">
-    <h1>Bootstrap starter template</h1>
-    <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+  <div class="tab-content" id="mytabcontent">
+    <div class="tab-pane fade show active text-center" id="home" role="tabpanel" aria-labelledby="home-tab">
+      <h1>Home</h1>
+    </div>
+    <div class="tab-pane fade text-center" id="tracker" role="tabpanel" aria-labelledby="tracker-tab">
+      <h1>Tracker</h1>
+    </div>
+    <div class="tab-pane fade text-center" id="leaderboard" role="tabpanel" aria-labelledby="leaderboard-tab">
+      <h1>Leaderboard</h1>
+    </div>
   </div>
   <samp id="results"></samp>
 
